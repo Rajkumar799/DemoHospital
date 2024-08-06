@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo Hospital</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1>Demo Hospital</h1>
+            <p>Your health, our priority.</p>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">demo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#appointments">Appointments</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="banner">
+        <img src="medical-center-template-design_23-2150148026.jpg" alt="Hospital Banner" class="img-fluid">
+    </div>
+
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">About Us</h2>
+            <p class="text-center">We are dedicated to providing the best healthcare services with a team of experienced professionals.</p>
+        </div>
+    </section>
+
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Our Services</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4 class="card-title">General Medicine</h4>
+                            <p class="card-text">Comprehensive care for all ages.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4 class="card-title">Surgery</h4>
+                            <p class="card-text">State-of-the-art surgical procedures.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4 class="card-title">Pediatrics</h4>
+                            <p class="card-text">Specialized care for children.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="appointments-contact-schedule" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="text-center">Book Appointments</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Preferred Date:</label>
+                            <input type="date" class="form-control" id="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Preferred Time:</label>
+                            <input type="time" class="form-control" id="time" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Book Appointment</button>
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="text-center">Schedule Hours</h2>
+                    <p class="text-center"><strong>Monday – Friday:</strong> 08:00 - 18:00</p>
+                    <p class="text-center"><strong>Saturday:</strong> 09:30 - 17:30</p>
+                    <p class="text-center"><strong>Sunday:</strong> 09:00 - 15:30</p>
+                    <p class="text-center"><strong>24/7 Service Available</strong></p>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="text-center">Location</h2>
+                    <p class="text-center">Find us at:</p>
+                    <p class="text-center">123 Health St, Wellness City, HC 12345</p>
+                    <a href="https://www.google.com/maps?q=123+Health+St,+Wellness+City,+HC+12345" target="_blank" class="btn btn-secondary btn-block">View on Google Maps</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Contact Us</h2>
+            <form>
+                <div class="form-group">
+                    <label for="contact-name">Name:</label>
+                    <input type="text" class="form-control" id="contact-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">Email:</label>
+                    <input type="email" class="form-control" id="contact-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-message">Message:</label>
+                    <textarea class="form-control" id="contact-message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-primary text-white text-center py-3">
+        <p>&copy; 2024 demo Hospital. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
